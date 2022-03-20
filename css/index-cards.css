@@ -1,0 +1,75 @@
+/*///////////////////PAGE 2////////////////////*/
+  
+:is(.card, .testimonial-card) {
+    background-color: hsl(0, 0%, 85%);
+    padding: 1em;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+  
+.card p {
+    color: hsl(0, 0%, 10%);
+    line-height: 1.5;
+    width: 25ch;
+    margin: 0 auto;
+}
+  
+:is(.card, .testimonial-card) h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 10%); 
+}
+  
+.content {
+    text-align: center;
+}
+  
+.content i {
+    color: hsl(120, 100%, 25%);
+}
+  
+.content-snow i {
+    color: hsl(210, 100%, 55%);
+}
+  
+.content-snow p {
+    text-align: center;
+}
+  
+.card-btn {
+    text-align: center;
+    border: 1px solid;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: hsl(0, 0%, 70%);
+}
+  
+.card-btn a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: hsl(0, 0%, 10%);
+    font-weight: bold;
+}
+  /*/ //////////////////PAGE 3////////////////////*/
+
+.testimonial-card p {
+  color: hsl(0, 0%, 10%);
+  line-height: 1.5;
+  width: 34ch;
+  margin: 0 auto;
+}
+
+.test-content h2 {
+  margin-bottom: 0.5em;
+}
+
+.testimonial-card h2 {
+  font-size: 1.2rem;
+}
+
+.testimonial-card i {
+  color: hsl(120, 100%, 25%);
+  font-size: 1.4rem;
+}

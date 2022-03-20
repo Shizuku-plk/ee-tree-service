@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+}
+
+body h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+body p {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  display: grid;
+  place-content: center;
+}
+
+/*///////////////////PAGE 1////////////////////*/
+
+.page-1 {
+  background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../img/background-2.jpg);
+  background-size: 100% 100%;
+  color: hsl(0, 0%, 90%);
+  min-height: 60vh;
+  padding: 1em;
+}
+
+.page-1 h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-top: 2em;
+}
+
+.page-1 p {
+  color: hsl(0, 0%, 80%);
+  line-height: 1.6;
+  width: 30ch;
+  margin: 0 auto;
+}
+
+.page1-btn {
+  margin-top: 3em;
+  text-align: center;
+  border: 1px solid hsl(0, 0%, 90%);
+  padding: 1em;
+}
+
+.page1-btn a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: hsl(0, 0%, 90%);
+}
+
+.page1-btn i {
+  color: hsl(120, 100%, 25%);
+}
+
+/*///////////////////PAGE 2////////////////////*/
+
+:is(.container-2, .container-3, .page-4) h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+:is(.page-2, .page-3) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+:is(.page-2, .page-3) > * + * {
+  margin-top: 2em;
+}
+
+/*///////////////////PAGE 4////////////////////*/
+
+.page-4 h2 {
+  margin-bottom: 1em;
+}
+
+.contact-form {
+  max-width: 400px;
+  border: 1px solid;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 85%);
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form * + div {
+  margin: 1em 0;
+}
+
+.contact-form div {
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  min-height: 2em;
+}
+
+label {
+  display: block;
+}
+
+.contact-us-btn button {
+  cursor: pointer;
+  padding: 1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+}
