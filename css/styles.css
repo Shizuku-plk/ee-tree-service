@@ -23,8 +23,7 @@ body p {
 /*///////////////////PAGE 1////////////////////*/
 
 .page-1 {
-  background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
-    url(../img/background-2.jpg);
+  background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(../img/background-2.jpg);
   background-size: 100% 100%;
   color: hsl(0, 0%, 90%);
   min-height: 60vh;
@@ -67,6 +66,7 @@ body p {
 :is(.container-2, .container-3, .page-4) h2 {
   font-size: 2rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 :is(.page-2, .page-3) {
