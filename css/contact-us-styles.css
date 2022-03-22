@@ -89,5 +89,6 @@ body p {
 }
 
 .contact-form * + div {
+    /*box model*/
     margin: 1em 0;
 }

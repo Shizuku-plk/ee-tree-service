@@ -23,35 +23,44 @@ body p {
 /*///////////////////PAGE 1////////////////////*/
 
 .page-1 {
+  /*display*/
   display: grid;
   place-content: center;
+  /*positioning*/
+  min-height: 60vh;
+  /*box model*/
+  padding: 1em;
   background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(../img/background-2.jpg);
   background-size: 100% 100%;
+  /*typography*/
   color: hsl(0, 0%, 90%);
-  min-height: 60vh;
-  padding: 1em;
 }
 
 .page-1 h2 {
+  /*typography*/
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
 }
 
 .page-1 p {
+  /*typography*/
   color: hsl(0, 0%, 80%);
   line-height: 1.6;
   width: 30ch;
 }
 
 .page1-btn {
+  /*box model*/
   margin-top: 3em;
-  text-align: center;
   border: 1px solid hsl(0, 0%, 90%);
   padding: 1em;
+  /*typography*/
+  text-align: center;
 }
 
 .page1-btn a {
+  /*typography*/
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -65,14 +74,17 @@ body p {
 /*///////////////////PAGE 2////////////////////*/
 
 :is(.container-2, .container-3, .page-4) h2 {
+  /*typography*/
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 :is(.page-2, .page-3) {
+  /*display*/
   display: flex;
   flex-wrap: wrap;
+  /*box model*/
   padding: 1em;
 }
 
@@ -87,11 +99,14 @@ body p {
 }
 
 .contact-form {
+  /*positioning*/
   max-width: 400px;
-  border: 1px solid;
+  /*box model*/
   margin: 0 auto;
   background-color: hsl(0, 0%, 85%);
   padding: 1em;
+  /*msc*/
+  border: 1px solid;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
