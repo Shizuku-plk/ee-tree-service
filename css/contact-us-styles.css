@@ -74,6 +74,20 @@ body p {
     color: hsl(120, 100%, 25%);
 }
 
-.container-2 {
-    
+/*///////////////////PAGE 2////////////////////////////*/
+.page-2 {
+    /*display*/
+    display: grid;
+    place-content: center;
+    /*box model*/
+    padding: 1em;
+}
+
+.contact-form label + input {
+    /*display*/
+    display: block;
+}
+
+.contact-form * + div {
+    margin: 1em 0;
 }
