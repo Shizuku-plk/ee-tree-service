@@ -83,6 +83,25 @@ body p {
     padding: 1em;
 }
 
+.page-2 ul * + li {
+    margin: 1em 0;
+}
+
+.review-us > div {
+    /*display*/
+    display: grid;
+    /*box model*/
+    padding: 1em;
+}
+
+.review-us ul {
+    list-style: none;
+}
+
+.review-us ul li {
+    display: inline-block;
+} 
+
 .contact-form label + input {
     /*display*/
     display: block;
