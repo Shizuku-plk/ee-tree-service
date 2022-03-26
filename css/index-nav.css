@@ -117,6 +117,7 @@ footer i {
   color: hsl(120, 100%, 25%);
 }
 
-.footer-icons span {
-  font-weight: bold;
+.footer-icons > div {
+  /*display*/
+  display: grid;
 }

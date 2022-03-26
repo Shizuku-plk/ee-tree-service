@@ -98,41 +98,20 @@ body p {
   margin-bottom: 1em;
 }
 
-.contact-form {
-  /*positioning*/
-  max-width: 400px;
+.page-4 {
+  /*display*/
+  display: grid;
+  place-content: center;
   /*box model*/
-  margin: 0 auto;
-  background-color: hsl(0, 0%, 85%);
   padding: 1em;
-  /*msc*/
-  border: 1px solid;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.contact-form * + div {
-  margin: 1em 0;
-}
-
-.contact-form div {
-  text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  min-height: 2em;
-}
-
-label {
+.contact-form label + input {
+  /*display*/
   display: block;
 }
 
-.contact-us-btn button {
-  cursor: pointer;
-  padding: 1em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  width: 100%;
+.contact-form * + div {
+  /*box model*/
+  margin: 1em 0;
 }
