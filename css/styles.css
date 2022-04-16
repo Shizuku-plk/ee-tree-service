@@ -83,13 +83,32 @@ body p {
 :is(.page-2, .page-3) {
   /*display*/
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   /*box model*/
   padding: 1em;
 }
 
 :is(.page-2, .page-3) > * + * {
-  margin-top: 2em;
+  margin: 2em 0 0 0;
+}
+
+@media (min-width: 1280px) {
+  .page-2 {
+    flex-direction: row;
+  }
+
+  .page-2 > * + * {
+    margin: 0 0 0 2em;
+  }
+
+  .page-3 {
+    flex-direction: row;
+  }
+
+  .page-3 > * + * {
+    margin: 0 0 0 2em;
+  }
 }
 
 /*///////////////////PAGE 4////////////////////*/
