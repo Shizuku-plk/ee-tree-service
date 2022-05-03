@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-body h2 {
+body h2, body h1 {
     font-family: "Playfair Display", serif;
 }
 
@@ -72,4 +72,24 @@ body p {
 
 .page1-btn i {
     color: hsl(120, 100%, 25%);
+}
+
+.page-2 h1 {
+    text-align: center;
+}
+
+.page-2 div {
+    padding: 1em;
+}
+
+.page-2 p {
+    line-height: 1.5;
+}
+
+.page-2 li {
+    color: hsl(0, 0%, 10%);
+}
+
+.service-img {
+    text-align: center;
 }

@@ -134,3 +134,7 @@ body p {
   /*box model*/
   margin: 1em 0;
 }
+
+.page-4 form {
+  padding: 2em;
+}

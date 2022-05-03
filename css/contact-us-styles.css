@@ -87,6 +87,10 @@ body p {
     margin: 1em 0;
 }
 
+.page-2 form {
+    padding: 2em;
+}
+
 .review-us > div {
     /*display*/
     display: grid;

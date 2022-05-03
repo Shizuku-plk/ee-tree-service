@@ -97,6 +97,16 @@ footer span {
   list-style: none;
 }
 
+.review-us ul, .footer-icons ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.review-us div {
+  padding: 1em;
+}
+
 .footer-nav li + li {
   margin: 1em 0;
 }
@@ -106,10 +116,6 @@ footer span {
   font-family: "Roboto", sans-serif;
   color: hsl(0, 0%, 10%);
   text-transform: uppercase;
-}
-
-.footer-icons li {
-  display: inline-block;
 }
 
 footer i {
