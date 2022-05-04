@@ -93,3 +93,13 @@ body p {
 .service-img {
     text-align: center;
 }
+
+@media (min-width: 1200px) {
+    .page-2 div {
+        min-height: 40vh;
+    }
+
+    .page-2 .service-txt {
+        min-width: 30ch;
+    }
+}

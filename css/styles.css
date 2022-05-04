@@ -93,7 +93,7 @@ body p {
   margin: 2em 0 0 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .page-2 {
     flex-direction: row;
   }
@@ -137,4 +137,17 @@ body p {
 
 .page-4 form {
   padding: 2em;
+}
+
+
+@media (min-width: 1200px) {
+  .container-2 {
+    height: 100vh;
+    margin-top: 7em;
+  }
+
+  .container-3 {
+    height: 60vh;
+    margin-top: 7em;
+  }
 }
