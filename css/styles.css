@@ -27,9 +27,9 @@ body p {
   display: grid;
   place-content: center;
   /*positioning*/
-  min-height: 60vh;
+  /*min-height: 60vh;*/
   /*box model*/
-  padding: 1em;
+  padding: 6em 1em;
   background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(../img/background-2.jpg);
   background-size: 100% 100%;
   /*typography*/
@@ -141,6 +141,10 @@ body p {
 
 
 @media (min-width: 1200px) {
+
+  .page-1 {
+    background-size: 50% 100%;
+  }
   .container-2 {
     height: 100vh;
     margin-top: 7em;

@@ -27,11 +27,10 @@ body p {
     display: grid;
     place-content: center;
     /*positioning*/
-    min-height: 50vh;
+    padding: 6em 1em;
     /*box model*/
     background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(../img/contact-us.jpg);
     background-size: 100% 100%;
-    padding: 1em;
     /*typography*/
     color: hsl(0, 0%, 90%);
 }
@@ -114,4 +113,10 @@ body p {
 .contact-form * + div {
     /*box model*/
     margin: 1em 0;
+}
+
+@media (min-width: 1200px) {
+    .page-1 {
+        background-size: 50% 100%;
+    }
 }

@@ -27,11 +27,10 @@ body p {
     display: grid;
     place-content: center;
     /*positioning*/
-    min-height: 50vh;
+    padding: 6em 1em;
     /*box model*/
     background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(../img/card-1.jpg);
     background-size: 100% 100%;
-    padding: 1em;
     /*typography*/
     color: hsl(0, 0%, 90%);
 }
@@ -79,7 +78,7 @@ body p {
 }
 
 .page-2 div {
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .page-2 p {
@@ -95,11 +94,29 @@ body p {
 }
 
 @media (min-width: 1200px) {
-    .page-2 div {
-        min-height: 40vh;
+
+    .page-2 p {
+        font-size: 1.3rem;
     }
 
-    .page-2 .service-txt {
-        min-width: 30ch;
+    .page-2 h1 {
+        font-size: 2.3rem;
+        text-align: left;
+    }
+
+    .page-2 img {
+        float: right;
+    }
+
+    .page-1 {
+        background-size: 50% 100%;
+    }
+
+    .page-2 div {
+        padding: 5em 4em;
+    }
+
+    .page-2 li {
+        font-size: 1.2rem;
     }
 }
