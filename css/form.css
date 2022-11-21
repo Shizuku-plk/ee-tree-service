@@ -1,0 +1,42 @@
+form {
+    width: 350px;
+    height: 450px;
+    padding: 1em;
+    
+    box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.62);
+    -moz-box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.62);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.form-container {
+    padding-bottom: 1em;
+}
+
+.page-3 form input {
+    display: block;
+    height: 2.5rem;
+    padding: 0 1em 0 1em;
+    margin-top: 1em;
+    border: 1px solid hsl(120, 84%, 24%);
+    border-radius: 14px;
+}
+
+form textarea {
+    padding: 1em 1em 0 1em;
+    margin-top: 1em;
+    border: 1px solid hsl(120, 84%, 24%);
+    border-radius: 14px;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.5em;
+    font-size: 0.9rem;
+    width: 50%;
+    background: hsl(120, 84%, 24%);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}

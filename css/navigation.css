@@ -1,0 +1,139 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: hsl(0, 0%, 90%);
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+/* Hover effets for navbar on desktop */
+.nav-bar a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: clamp(1.4rem, 1.25vw, 2rem);
+    font-weight: bold;
+    color: hsl(120, 84%, 24%);
+    background:
+      linear-gradient(
+        to right,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        hsl(120, 84%, 24%),
+        hsl(120, 84%, 24%),
+        hsl(120, 84%, 24%)
+      );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.nav-bar a:hover {
+    color: hsl(120, 84%, 24%);
+    background-size: 0 3px, 100% 3px;
+}
+
+.nav-bar .link {
+    padding: 0 5em;
+}
+
+/* create the hamburger menu bars on the top right side of the screen*/
+nav .hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger-btn .bar-1,
+.hamburger-btn .bar-2,
+.hamburger-btn .bar-3 {
+    height: 3px;
+    width: 100%;
+    background-color: hsl(120, 84%, 24%);
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+@media screen and (max-width: 650px) {
+    nav .hamburger-btn {
+        display: flex;
+    }
+
+    .nav-bar {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-bar.nav-bar.active ul {
+        background: hsl(0, 0%, 90%);
+    }
+
+    .nav-bar.nav-bar.active a {
+        color: hsl(120, 84%, 24%);
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-bar li {
+        text-align: center;
+    }
+
+    .nav-bar a {
+        background: none;
+    }
+
+    .nav-bar.active {
+        display: flex;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+}
+
+footer {
+    padding: 1em 0.5em 1em 0.5em;
+    background: hsl(0, 0%, 90%);
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
