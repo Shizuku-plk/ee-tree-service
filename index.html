@@ -18,11 +18,14 @@
     <link rel="stylesheet" href="css/css-cards.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <!--javascript files-->
     <script src="js/menu.js" defer></script>
+    <script src="js/js05.js" defer></script>
+    <script src="js/lightbox_data.js" defer></script>
 </head>
 <body>
-    <section class="page-1">
+    <div class="page-1">
         <nav> 
 
             <a href="#" class="hamburger-btn">
@@ -43,12 +46,13 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                 </ul>
             </div>
 
         </nav>
 
-        <section class="hero-section">
+        <div class="hero-section">
             <article class="hero-text">
                 <h1>EE Tree Service</h1>
                 <p>
@@ -60,10 +64,10 @@
             <div class="hero-btn">
                 <a href="tel:630-688-3370">Call us: 630.688.3370</a>
             </div>
-        </section>
-    </section>
+        </div>
+    </div>
 
-    <section class="page-2">
+    <div class="page-2">
         <h2 id="services">Services</h2>
         <div class="services-container">
             <div class="card">
@@ -108,9 +112,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="page-4">
+    <div class="page-4">
         <h2 id="testimonials">Testimonials</h2>
         <div class="testimonial-container">
             <div class="testimonial-card">
@@ -161,9 +165,9 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
-    <section class="page-3">
+    <div class="page-3">
         <h2 id="contact">Contact us</h2>
         <div class="form-container">
             <form action="https://formspree.io/f/xbjwkkwp" method="POST">
@@ -174,7 +178,15 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-    </section>
+    </div>
+
+    <div class="page-5">
+        <h2 id="gallery">Gallery</h2>
+
+        <article>
+            <div id="lightbox"></div>
+        </article>
+    </div>
 
     <footer>
         <div class="footer-container">
