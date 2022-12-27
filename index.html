@@ -23,11 +23,9 @@
     <link rel="stylesheet" href="css/css-cards.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/lightbox.css">
     <!--javascript files-->
     <script src="js/menu.js" defer></script>
-    <script src="js/js05.js" defer></script>
-    <script src="js/lightbox_data.js" defer></script>
+    <script src="js/image-slider.js" defer></script>
 </head>
 <body>
     <div class="page-1">
@@ -59,7 +57,7 @@
 
         <div class="hero-section">
             <article class="hero-text">
-                <h1>EE Tree Service</h1>
+                <h1 id="home">EE Tree Service</h1>
                 <p>
                     We have been serving the area for over 20 years. Our goal is 
                     to provide quality services at affordable rates.
@@ -77,7 +75,7 @@
         <div class="services-container">
             <div class="card">
                 <div class="card-img">
-                  <img src="img/card-1.jpg" alt="Tree Service" title="Tree Service" width="300" height="300" />
+                  <img src="img/card-1.jpg" alt="Tree Service" title="Tree Service" width="300" height="300">
                 </div>
       
                 <article class="content">
@@ -91,7 +89,7 @@
       
             <div class="card">
                 <div class="card-img">
-                  <img src="img/card-2.jpg" alt="Landscaping" title="Landscaping" width="300" height="300" />
+                  <img src="img/card-2.jpg" alt="Landscaping" title="Landscaping" width="300" height="300">
                 </div>
       
                 <article class="content">
@@ -105,7 +103,7 @@
       
             <div class="card">
                 <div class="card-img">
-                  <img src="img/card-3.jpg" alt="Snow Plowing" title="Snow Plowing" width="300" height="300" />
+                  <img src="img/card-3.jpg" alt="Snow Plowing" title="Snow Plowing" width="300" height="300">
                 </div>
       
                 <article class="content-snow">
@@ -185,29 +183,69 @@
         </div>
     </div>
 
-    <div class="page-5">
-        <h2 id="gallery">Gallery</h2>
-
-        <article>
-            <div id="lightbox"></div>
-        </article>
-    </div>
-
     <footer>
         <div class="footer-container">
-            <div class="footer-bottom">
-                <span>2022 EE Tree Service Inc &copy;All Rights Reserved</span>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-                                <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+
+            <div class="footer-card">
+                <article class="footer-content">
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="footer-card">
+                <article class="footer-content">
+                    <h3>Contact us</h3>
+                    <ul>
+                        <li>
+                            <a href="tel:6306883370">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path fill="#0f0" d="M13,42h22c3.866,0,7-3.134,7-7V13c0-3.866-3.134-7-7-7H13c-3.866,0-7,3.134-7,7v22	C6,38.866,9.134,42,13,42z"></path><path fill="#fff" d="M35.45,31.041l-4.612-3.051c-0.563-0.341-1.267-0.347-1.836-0.017c0,0,0,0-1.978,1.153	c-0.265,0.154-0.52,0.183-0.726,0.145c-0.262-0.048-0.442-0.191-0.454-0.201c-1.087-0.797-2.357-1.852-3.711-3.205	c-1.353-1.353-2.408-2.623-3.205-3.711c-0.009-0.013-0.153-0.193-0.201-0.454c-0.037-0.206-0.009-0.46,0.145-0.726	c1.153-1.978,1.153-1.978,1.153-1.978c0.331-0.569,0.324-1.274-0.017-1.836l-3.051-4.612c-0.378-0.571-1.151-0.722-1.714-0.332	c0,0-1.445,0.989-1.922,1.325c-0.764,0.538-1.01,1.356-1.011,2.496c-0.002,1.604,1.38,6.629,7.201,12.45l0,0l0,0l0,0l0,0	c5.822,5.822,10.846,7.203,12.45,7.201c1.14-0.001,1.958-0.248,2.496-1.011c0.336-0.477,1.325-1.922,1.325-1.922	C36.172,32.192,36.022,31.419,35.45,31.041z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="malito:esteban@eetreeserviceinc.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path fill="#1e88e5" d="M34,42H14c-4.411,0-8-3.589-8-8V14c0-4.411,3.589-8,8-8h20c4.411,0,8,3.589,8,8v20 C42,38.411,38.411,42,34,42z"></path><path fill="#fff" d="M35.926,17.488L29.414,24l6.511,6.511C35.969,30.347,36,30.178,36,30V18 C36,17.822,35.969,17.653,35.926,17.488z M26.688,23.899l7.824-7.825C34.347,16.031,34.178,16,34,16H14 c-0.178,0-0.347,0.031-0.512,0.074l7.824,7.825C22.795,25.38,25.205,25.38,26.688,23.899z M24,27.009 c-1.44,0-2.873-0.542-3.99-1.605l-6.522,6.522C13.653,31.969,13.822,32,14,32h20c0.178,0,0.347-0.031,0.512-0.074l-6.522-6.522 C26.873,26.467,25.44,27.009,24,27.009z M12.074,17.488C12.031,17.653,12,17.822,12,18v12c0,0.178,0.031,0.347,0.074,0.512 L18.586,24L12.074,17.488z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="footer-card">
+                <article class="footer-content">
+                    <h3>Find us on</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/company/ee-tree-service-inc/">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100088403710534">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </div>
+
+        <hr>
+
+        <span class="copyright">2022 EE Tree Service Inc &copy;All Rights Reserved</span>
     </footer>
 </body>
 </html>
