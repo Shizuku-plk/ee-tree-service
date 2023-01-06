@@ -1,0 +1,8 @@
+.parallax-image {
+    position: relative;
+    min-height: 30em;
+    background-image: url('../img/parallaxTrees.jpg');
+    background-position: center;
+    background-size: 80%;
+    background-attachment: fixed;
+}

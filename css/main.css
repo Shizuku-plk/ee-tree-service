@@ -65,7 +65,8 @@ html {
 
 .page-2 h2,
 .page-3 h2,
-.page-4 h2 {
+.page-4 h2,
+.page-5 h2 {
     font-size: 3rem;
     text-align: center;
     color: hsl(120, 81%, 21%);
