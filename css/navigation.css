@@ -21,7 +21,7 @@ nav {
     padding: 0.5em;
     text-decoration: none;
     font-size: clamp(1.4rem, 1.25vw, 2rem);
-    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
     color: hsl(120, 84%, 24%);
     background:
       linear-gradient(
@@ -123,4 +123,5 @@ nav .hamburger-btn {
 footer {
     padding: 1em;
     background: hsl(0, 0%, 90%);
+    font-family: 'Urbanist', sans-serif;
 }

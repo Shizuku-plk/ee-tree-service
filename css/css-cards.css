@@ -63,13 +63,14 @@
 .card p {
     color: hsl(0, 0%, 10%);
     line-height: 1.5;
+    font-family: 'Urbanist', sans-serif;
     width: 25ch;
     margin: 0 auto;
 }
 
 .card h2 {
-    font-weight: bold;
     font-size: 1.5rem;
+    font-family: 'Urbanist', sans-serif;
     color: hsl(0, 0%, 10%); 
 }
 
@@ -77,17 +78,17 @@
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .card-btn a {
     text-decoration: none;
-    font-weight: bold;
     color: hsl(120, 84%, 24%);
 }
 
 .testimonial-card {
     width: 300px;
-    height: 350px;
+    height: 360px;
     padding: 0.5em;
     
     box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.62);
@@ -100,12 +101,12 @@
 .testimonial-card h3 {
     color: hsl(120, 84%, 24%);
     font-size: 1.3rem;
-    font-weight: bold;
     padding: 0.5em 0 0 0;
 }
 
 .testimonial-card p {
     line-height: 1.5;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .footer-content ul {
