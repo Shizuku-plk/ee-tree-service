@@ -30,6 +30,7 @@
     .testimonial-container {
       flex-direction: row;
       padding-top: 10%;
+      padding-bottom: 5%;
     }
 
     .footer-container {
@@ -61,7 +62,7 @@
 }
 
 .card p {
-    color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 80%);
     line-height: 1.5;
     font-family: 'Urbanist', sans-serif;
     width: 25ch;
@@ -71,7 +72,7 @@
 .card h2 {
     font-size: 1.5rem;
     font-family: 'Urbanist', sans-serif;
-    color: hsl(0, 0%, 10%); 
+    color: hsl(0, 0%, 90%);
 }
 
 .card-btn {
@@ -107,6 +108,7 @@
 .testimonial-card p {
     line-height: 1.5;
     font-family: 'Urbanist', sans-serif;
+    color: hsl(0, 0%, 80%);
 }
 
 .footer-content ul {

@@ -4,7 +4,7 @@ nav {
     align-items: center;
     position: fixed;
     width: 100%;
-    background: hsl(0, 0%, 90%);
+    background: hsl(0, 0%, 95%);
 }
 
 .nav-bar ul {
@@ -86,7 +86,7 @@ nav .hamburger-btn {
     }
 
     .nav-bar.nav-bar.active ul {
-        background: hsl(0, 0%, 90%);
+        background: hsl(0, 0%, 95%);
     }
 
     .nav-bar.nav-bar.active a {

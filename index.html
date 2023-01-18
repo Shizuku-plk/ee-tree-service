@@ -28,6 +28,8 @@
     <!--javascript files-->
     <script src="js/menu.js" defer></script>
     <script src="js/gallery.js" defer></script>
+    <script src="js/parallax.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="page-1">
@@ -77,28 +79,9 @@
         </div>
     </div>
 
-    <div class="page-5">
-        <h2 id="gallery">Gallery</h2>
-        <div class="gallery-container">
+    <div class="space"></div>
 
-            <div class="main-img">
-                <img src="img/1.jpg" id="current" alt="Tree Removal">
-              </div>
-            
-              <div class="imgs">
-                <img src="img/2.jpg" height="200" alt="Tree Removal">
-                <img src="img/3.jpg" height="200" alt="Tree Removal">
-                <img src="img/4.jpg" height="200" alt="Tree Removal">
-                <img src="img/removal.jpg" height="200" alt="Tree Removal">
-                <img src="img/5.jpg" height="200" alt="Tree Removal">
-                <img src="img/6.jpg" height="200" alt="Tree Removal">
-                <img src="img/7.jpg" height="200" alt="Tree Removal"> 
-                <img src="img/8.jpg" height="200" alt="Tree Removal">
-              </div>
-        </div>
-    </div>
-
-    <div class="page-2">
+    <div class="page-2 parallax">
         <h2 id="services">Services</h2>
         <div class="services-container">
             <div class="card">
@@ -145,7 +128,9 @@
         </div>
     </div>
 
-    <div class="page-4">
+    <div class="space"></div>
+
+    <div class="page-4 parallax">
         <h2 id="testimonials">Testimonials</h2>
         <div class="testimonial-container">
             <div class="testimonial-card">
@@ -198,7 +183,30 @@
         </div>
     </div>
 
-    <div class="page-3">
+    <div class="page-5 parallax">
+        <h2 id="gallery">Gallery</h2>
+        <div class="gallery-container">
+
+            <div class="main-img">
+                <img src="img/1.jpg" id="current" alt="Tree Removal">
+              </div>
+            
+              <div class="imgs">
+                <img src="img/2.jpg" height="200" alt="Tree Removal">
+                <img src="img/3.jpg" height="200" alt="Tree Removal">
+                <img src="img/4.jpg" height="200" alt="Tree Removal">
+                <img src="img/removal.jpg" height="200" alt="Tree Removal">
+                <img src="img/5.jpg" height="200" alt="Tree Removal">
+                <img src="img/6.jpg" height="200" alt="Tree Removal">
+                <img src="img/7.jpg" height="200" alt="Tree Removal"> 
+                <img src="img/8.jpg" height="200" alt="Tree Removal">
+              </div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="page-3 parallax">
         <h2 id="contact">Contact us</h2>
         <div class="form-container">
             <form action="https://formspree.io/f/xbjwkkwp" method="POST">
