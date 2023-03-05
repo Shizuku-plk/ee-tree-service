@@ -108,7 +108,12 @@
      'two'
      'three'
      'four'
-     'five';
+     'five'
+     'six'
+     'seven'
+     'eight'
+     'nine'
+     'ten';
   
     padding-block: 2rem;
     width: min(95%, 70rem);
@@ -137,6 +142,21 @@
   .testimonial:nth-child(5) {
     grid-area: five;
   }
+  .testimonial:nth-child(6) {
+    grid-area: six;
+  }
+  .testimonial:nth-child(7) {
+    grid-area: seven;
+  }
+  .testimonial:nth-child(8) {
+    grid-area: eight;
+  }
+  .testimonial:nth-child(9) {
+    grid-area: nine;
+  }
+  .testimonial:nth-child(10) {
+    grid-area: ten;
+  }
   
   @media screen and (min-width: 33em) {
     .testimonial-grid {
@@ -144,7 +164,11 @@
         "one one"
         "two three"
         "five five"
-        "four four";
+        "four four"
+        "six six"
+        "seven eight"
+        "ten ten"
+        "nine nine";
     }
   }
   
@@ -154,7 +178,11 @@
        'one one'
        'two five'
        'three five'
-       'four four';
+       'four four'
+       'six six'
+       'seven ten'
+       'eight ten'
+       'nine nine';
     }
   }
   
@@ -163,7 +191,10 @@
         grid-template-areas:
         "one one two"
         "five five five"
-        "three four four";
+        "three four four"
+        "six six seven"
+        "ten ten ten"
+        "eight nine nine";
     }
   }
   
@@ -171,7 +202,9 @@
     .testimonial-grid {
         grid-template-areas:
         "one one two five"
-        "three four four five";
+        "three four four five"
+        "six six seven ten"
+        "eight nine nine ten";
     }
   }
   

@@ -10,6 +10,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.logo img {
+    height: 85px;
+}
+
+@media screen and (max-width: 650px) {
+    .logo img {
+        height: 70px;
+    }
+}
+
 
 .hero-section {
     display: grid;
