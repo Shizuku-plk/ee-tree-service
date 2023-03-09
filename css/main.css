@@ -125,6 +125,24 @@ html {
     font-size: 1.5rem;
 }
 
+.about h2 {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.about article p {
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 1280px) {
+    .about article p {
+        width: 60ch;
+        margin: 0 auto;
+    }
+}
+
 .testimonial-btn {
     padding: 0.5em;
     font-size: 1.5rem;
@@ -179,6 +197,7 @@ html {
     text-decoration: none;
 }
 
+.about h1,
 .page-2 h1,
 .page-3 h2,
 .page-4 h2,
