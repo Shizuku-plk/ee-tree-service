@@ -28,6 +28,12 @@
   dd {
     margin: 0;
   }
+
+  .testimonial-header h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: hsl(120, 81%, 21%);
+  }
   
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
   ul[role="list"],

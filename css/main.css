@@ -20,11 +20,6 @@ html {
     }
 }
 
-.hidden {
-    color: transparent;
-    height: 0;
-}
-
 
 .hero-section {
     display: grid;
@@ -184,7 +179,7 @@ html {
     text-decoration: none;
 }
 
-.page-2 h2,
+.page-2 h1,
 .page-3 h2,
 .page-4 h2,
 .page-5 h2 {
