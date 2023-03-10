@@ -130,3 +130,7 @@
 .footer-links a:hover {
     color: hsl(0, 0%, 40%);
 }
+
+.service-areas li {
+    line-height: 1.4;
+}
