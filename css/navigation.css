@@ -7,6 +7,27 @@ nav {
     background: hsl(0, 0%, 95%);
 }
 
+@media screen and (max-width: 810px) {
+    .nav-bar {
+        width: 100%;
+    }
+
+    .logo img {
+        height: 70px;
+        width: 200px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .nav-bar {
+        width: 50%;
+    }
+}
+
 .nav-bar ul {
     display: flex;
 }
@@ -71,10 +92,6 @@ nav .hamburger-btn {
     border-radius: 10px;
 }
 
-.logo img {
-    width: 200px;
-}
-
 @media screen and (max-width: 650px) {
     nav .hamburger-btn {
         display: flex;
@@ -113,10 +130,6 @@ nav .hamburger-btn {
 
     .nav-bar.active {
         display: flex;
-    }
-
-    .logo img {
-        width: 150px;
     }
 }
 

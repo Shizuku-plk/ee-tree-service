@@ -12,11 +12,13 @@ html {
 
 .logo img {
     height: 85px;
+    padding-left: 0.3em;
 }
 
 @media screen and (max-width: 650px) {
     .logo img {
         height: 70px;
+        width: 200px;
     }
 }
 
