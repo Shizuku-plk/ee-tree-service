@@ -2,3 +2,24 @@
     min-height: 100vh;
     padding-top: 10em;
 }
+
+.all-areas article {
+    padding: 0.5em;
+}
+
+.all-areas article p {
+    line-height: 1.5;
+}
+
+.service-info {
+    padding: 0.5em;
+}
+
+.service-info p {
+    line-height: 1.5;
+    max-width: 120ch;
+}
+
+article h2, .eetreeservice {
+    color: hsl(120, 84%, 24%);
+}
