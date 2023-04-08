@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/css-cards.css">
     <link rel="stylesheet" href="css/parallax.css">
+    <link rel="stylesheet" href="css/form.css">
     <!--JS-->
     <script src="js/menu.js" defer></script>
     <script src="js/parallax.js" defer></script>
@@ -56,7 +57,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="tree-service-areas.html">Information</a></li>
                 </ul>
@@ -133,6 +134,19 @@
 
     <div class="space"></div>
 
+    <div class="page-3 parallax">
+        <h2 id="contact">Contact us</h2>
+        <div class="form-container">
+            <form action="https://formspree.io/f/xbjwkkwp" method="POST">
+                <input type="text" name="firstName" id="firstName" class="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" id="lastName" class="lastName" placeholder="Last Name" required>
+                <input type="email" name="email" id="email" class="email" placeholder="Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-container">
 
@@ -168,7 +182,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="tree-service-areas.html">Information</a></li>
                     </ul>

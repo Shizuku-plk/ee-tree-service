@@ -1,6 +1,6 @@
 .all-areas {
     min-height: 100vh;
-    padding-top: 10em;
+    padding-top: 7em;
 }
 
 .all-areas article {
@@ -22,4 +22,8 @@
 
 article h2, .eetreeservice {
     color: hsl(120, 84%, 24%);
+}
+
+.all-areas h1 {
+    padding: 0.5em;
 }
