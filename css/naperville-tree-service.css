@@ -1,4 +1,22 @@
 .all-info {
     min-height: 100vh;
-    padding-top: 10em;
+    padding-top: 7em;
+}
+
+.all-info h1 {
+    padding: 0.5em;
+}
+
+.all-info article {
+    padding: 0.5em;
+}
+
+.all-info article p {
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 1280px) {
+    article p {
+        width: 96ch;
+    }
 }
