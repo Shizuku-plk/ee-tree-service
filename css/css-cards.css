@@ -61,6 +61,10 @@
     border-radius: 5px;
 }
 
+.content a, .content-snow a {
+    color: hsl(0, 0%, 90%);
+}
+
 .card p {
     color: hsl(0, 0%, 80%);
     line-height: 1.5;
