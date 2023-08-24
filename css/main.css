@@ -127,18 +127,29 @@ html {
     font-size: 1.5rem;
 }
 
+.insurance-info h2,
 .about h2 {
     padding: 1em 0;
     text-align: center;
 }
 
+.insurance-info article p,
 .about article p {
     padding: 0.5em 1em;
     font-size: 1.2rem;
     line-height: 1.5;
 }
 
+.insurance-info ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
 @media screen and (min-width: 1280px) {
+    .insurance-info article p,
     .about article p {
         width: 60ch;
         margin: 0 auto;
@@ -199,6 +210,7 @@ html {
     text-decoration: none;
 }
 
+.insurance-info h1,
 .about h1,
 .page-2 h1,
 .page-3 h2,
