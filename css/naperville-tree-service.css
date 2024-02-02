@@ -7,6 +7,11 @@
     padding: 0.5em;
 }
 
+.all-info h3 {
+    padding: 0.5em;
+    color: hsl(120, 81%, 21%);
+}
+
 .all-info article {
     padding: 0.5em;
 }
