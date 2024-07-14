@@ -216,12 +216,9 @@ html {
     text-decoration: none;
 }
 
-.page-2 h1,
-.page-3 h2,
-.page-4 h2,
-.page-5 h2 {
+.services-container h2 {
     font-size: 3rem;
-    text-align: center;
+    text-align: start;
     color: hsl(120, 81%, 21%);
 }
 
