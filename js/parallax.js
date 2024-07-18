@@ -1,3 +1,4 @@
+/*
 $(window).scroll(function(e) {
     parallax();
   })
@@ -18,3 +19,4 @@ $(window).scroll(function(e) {
       }
     })
   }
+    */

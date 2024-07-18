@@ -74,6 +74,7 @@
 }
 
 .card h3 {
+    text-align: center;
     font-size: 1.5rem;
     font-family: 'Urbanist', sans-serif;
     color: hsl(0, 0%, 90%);

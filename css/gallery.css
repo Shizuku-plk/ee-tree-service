@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
+.hero-section4 span {
+	color: hsl(120, 81%, 21%);
+}
+
 .container-gallery {
 	max-width: 100rem;
 	margin: 0 auto;

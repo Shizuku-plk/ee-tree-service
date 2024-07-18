@@ -59,30 +59,15 @@ html {
     color: hsl(0, 0%, 90%);
 }
 
-/*
-.hero-text,
-.hero-text2,
-.hero-text3,
-.hero-text4 {
-    padding: 0.5em;
-}
-*/
-
-/*
-.hero-text2 span,
-.hero-text3 span,
-.hero-text4 span {
-    color: hsl(120, 81%, 21%);
-}
-*/
-
-.hero-section h1 {
+.hero-section h1,
+.hero-section4 h1 {
     padding: 0.5em;
     font-size: 3rem;
     color: hsl(0, 0%, 90%);
 }
 
-.hero-section article p {
+.hero-section div p,
+.hero-section4 div p {
     margin: 0 auto;
     padding: 0.3em;
     font-size: 1.4rem;
@@ -104,7 +89,7 @@ html {
         font-size: 2.5rem;
     }
 
-    .hero-section article p {
+    .hero-section div p {
         font-size: 1.1rem;
         width: 100%;
     }
@@ -120,7 +105,11 @@ html {
 }
 
 .insurance-info h2,
-.about h2 {
+.about h2,
+.services-wrapper h2,
+.testimonial-wrapper h2,
+.gallery-wrapper h2,
+.contact-wrapper h2 {
     font-size: 3rem;
     text-align: center;
     color: hsl(120, 81%, 21%);
@@ -132,8 +121,8 @@ html {
     text-align: center;
 }
 
-.insurance-info article p,
-.about article p {
+.insurance-info div p,
+.about div p {
     padding: 0.5em 1em;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -148,8 +137,8 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-    .insurance-info article p,
-    .about article p {
+    .insurance-info div p,
+    .about div p {
         width: 60ch;
         margin: 0 auto;
     }
@@ -161,6 +150,32 @@ html {
     font-weight: bold;
     color: hsl(120, 81%, 21%);
     text-decoration: none;
+}
+
+.hero-btn a,
+.hero-btn2 a,
+.hero-btn3 a,
+.hero-btn4 a {
+    color: hsl(120, 84%, 24%);
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+}
+
+.contact-wrapper {
+    display: grid;
+    place-content: center;
+}
+
+.contact-wrapper h2 {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.testimonial-wrapper h2 {
+    padding-top: 0.5em;
+}
+
+.gallery-wrapper h2 {
+    padding-bottom: 10%;
 }
 
 /*
@@ -207,34 +222,19 @@ html {
 }
 */
 
-.hero-btn a,
-.hero-btn2 a,
-.hero-btn3 a,
-.hero-btn4 a {
-    color: hsl(120, 84%, 24%);
-    font-family: 'Urbanist', sans-serif;
-    text-decoration: none;
+/*
+.hero-text,
+.hero-text2,
+.hero-text3,
+.hero-text4 {
+    padding: 0.5em;
 }
+*/
 
-.services-container h2 {
-    font-size: 3rem;
-    text-align: start;
+/*
+.hero-text2 span,
+.hero-text3 span,
+.hero-text4 span {
     color: hsl(120, 81%, 21%);
 }
-
-.page-3 {
-    display: grid;
-    place-content: center;
-}
-
-.page-3 h2 {
-    padding: 0.5em 0 0.5em 0;
-}
-
-.page-4 h2 {
-    padding-top: 0.5em;
-}
-
-.page-5 h2 {
-    padding-bottom: 10%;
-}
+*/
