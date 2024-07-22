@@ -139,3 +139,14 @@
 .service-areas li {
     line-height: 1.4;
 }
+
+@media screen and (max-width: 650px) {
+    .service-areas li,
+    .footer-card li {
+        font-size: 1.2rem;
+    }
+
+    footer h3 {
+        font-size: 1.5rem;
+    }
+}
