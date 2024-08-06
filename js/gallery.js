@@ -1,36 +1,49 @@
-$(function(){
-		
-	$('#thumbnail li').click(function(){
-		var thisIndex = $(this).index()
-			
-		if(thisIndex < $('#thumbnail li.active').index()){
-			prevImage(thisIndex, $(this).parents("#thumbnail").prev("#image-slider"));
-		}else if(thisIndex > $('#thumbnail li.active').index()){
-			nextImage(thisIndex, $(this).parents("#thumbnail").prev("#image-slider"));
-		}
-			
-		$('#thumbnail li.active').removeClass('active');
-		$(this).addClass('active');
+let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
 
-		});
-	});
-
-var width = $('#image-slider').width();
-
-function nextImage(newIndex, parent){
-	parent.find('li').eq(newIndex).addClass('next-img').css('left', width).animate({left: 0},600);
-	parent.find('li.active-img').removeClass('active-img').css('left', '0').animate({left: -width},600);
-	parent.find('li.next-img').attr('class', 'active-img');
-}
-function prevImage(newIndex, parent){
-	parent.find('li').eq(newIndex).addClass('next-img').css('left', -width).animate({left: 0},600);
-	parent.find('li.active-img').removeClass('active-img').css('left', '0').animate({left: width},600);
-	parent.find('li.next-img').attr('class', 'active-img');
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
 }
 
-/* Thumbails */
-var ThumbailsWidth = ($('#image-slider').width() - 18.5)/7;
-$('#thumbnail li').find('img').css('width', ThumbailsWidth);
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
 
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
 
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
 
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
