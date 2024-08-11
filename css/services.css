@@ -4,17 +4,21 @@
     min-height: 10vh;
 }
 
+.hero-section2 span {
+	color: hsl(120, 81%, 21%);
+}
+
 .quick-links {
     padding: 1em;
 }
 
 .quick-links h2,
 .tree-removal-info h2,
-.page-3s h2,
-.page-4s h2,
-.page-5s h2,
-.page-6s h2,
-.page-7s h2 {
+.tree-trimming-info h2,
+.stump-info h2,
+.mowing-info h2,
+.mulch-info h2,
+.snow-info h2 {
     font-size: 3rem;
     text-align: center;
     color: hsl(120, 81%, 21%);
@@ -71,11 +75,11 @@ article img {
 }
 
 .tree-removal-info h2,
-.page-3s h2,
-.page-4s h2,
-.page-5s h2,
-.page-6s h2,
-.page-7s h2 {
+.tree-trimming-info h2,
+.stump-info h2,
+.mowing-info h2,
+.mulch-info h2,
+.snow-info h2 {
     font-family: 'Times New Roman', Times, serif;
     padding-bottom: 0.5em;
 }
@@ -106,7 +110,7 @@ article img {
     background-size: cover;
 }
 
-.page-3s {
+.tree-trimming-info {
     display: flow-root;
     padding: 1em;
     min-height: 40vh;
@@ -114,7 +118,7 @@ article img {
     background-size: cover;
 }
 
-.page-4s {
+.stump-info {
     display: flow-root;
     padding: 1em;
     min-height: 40vh;
@@ -122,7 +126,7 @@ article img {
     background-size: cover;
 }
 
-.page-5s {
+.mowing-info {
     display: flow-root;
     padding: 1em;
     min-height: 40vh;
@@ -130,7 +134,7 @@ article img {
     background-size: cover;
 }
 
-.page-6s {
+.mulch-info {
     display: flow-root;
     padding: 1em;
     min-height: 40vh;
@@ -138,7 +142,7 @@ article img {
     background-size: cover;
 }
 
-.page-7s {
+.snow-info {
     display: flow-root;
     padding: 1em;
     min-height: 40vh;
