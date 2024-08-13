@@ -7,21 +7,6 @@ nav {
     background: hsl(0, 0%, 95%);
 }
 
-@media screen and (max-width: 810px) {
-    .nav-bar {
-        width: 100%;
-    }
-
-    .logo img {
-        height: 70px;
-        width: 200px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-}
-
 @media screen and (max-width: 1440px) {
     .nav-bar {
         width: 50%;
@@ -92,7 +77,7 @@ nav .hamburger-btn {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1308px) {
     nav .hamburger-btn {
         display: flex;
     }
