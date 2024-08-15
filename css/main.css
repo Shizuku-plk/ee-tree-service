@@ -125,7 +125,8 @@ html {
 .services-wrapper h2,
 .testimonial-wrapper h2,
 .gallery-wrapper h2,
-.contact-wrapper h2 {
+.contact-wrapper h2,
+.faq-wrapper h2 {
     font-size: 3rem;
     text-align: center;
     color: hsl(120, 81%, 21%);
@@ -140,6 +141,7 @@ html {
 .insurance-info div p,
 .about div p {
     padding: 0.5em 1em;
+    font-family: 'urbanist', sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
 }

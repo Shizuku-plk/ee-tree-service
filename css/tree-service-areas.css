@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
 .all-areas {
     min-height: 100vh;
     padding-top: 7em;
@@ -8,6 +10,7 @@
 }
 
 .all-areas article p {
+    font-family: 'urbanist', sans-serif;
     line-height: 1.5;
 }
 

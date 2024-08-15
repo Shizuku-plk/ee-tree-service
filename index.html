@@ -49,9 +49,13 @@
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/parallax.css">
     <link rel="stylesheet" href="css/image-slider.css">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <link rel="stylesheet" href="css/testimonial-slider.css">
     <!--javascript files-->
     <script src="js/menu.js" defer></script>
     <script src="js/gallery.js" defer></script>
+    <script src="js/FAQ.js" defer></script>
+    <script src="js/testimonial-slider.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -110,6 +114,56 @@
         </div>
     </article>
 
+    <div class="space"></div>
+
+    <div class="container">
+        <article id="testim" class="testim">
+            <div class="testim-cover">
+                <div class="wrap">
+    
+                    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                    <ul id="testim-dots" class="dots">
+                        <li class="dot active"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li>
+                    </ul>
+                    <div id="testim-content" class="cont">
+                        
+                        <div class="active">
+                            <h2>Lorem P. Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                        <div>
+                            <h2>Mr. Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                        <div>
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                        <div>
+                            <h2>Lorem De Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                        <div>
+                            <h2>Ms. Lorem R. Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                    </div>
+    
+                </div>
+             </div>
+        </article>
+    </div>
+    
     <div class="space"></div>
 
     <div class="wrap">
@@ -297,6 +351,61 @@
                 <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
                 <button type="submit">Submit</button>
             </form>
+        </div>
+    </article>
+
+    <article class="faq-wrapper">
+        <h2>Frequently Asked Question</h2>
+        <div class="faq">
+            <button class="accordion">
+                <h3>What is the cost to remove a tree?</h3>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512.02 319.26"><path d="M5.9 48.96 48.97 5.89c7.86-7.86 20.73-7.84 28.56 0l178.48 178.48L434.5 5.89c7.86-7.86 20.74-7.82 28.56 0l43.07 43.07c7.83 7.84 7.83 20.72 0 28.56l-192.41 192.4-.36.37-43.07 43.07c-7.83 7.82-20.7 7.86-28.56 0l-43.07-43.07-.36-.37L5.9 77.52c-7.87-7.86-7.87-20.7 0-28.56z"/></svg>
+            </button>
+            <div class="pannel">
+                <p>
+                    the cost to remove a tree varies widely depending on several factors, including: 
+                    Tree size and height, Type of tree, Location and accessibility, Root system complexity
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                <h3>Is topping trees a good idea?</h3> 
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512.02 319.26"><path d="M5.9 48.96 48.97 5.89c7.86-7.86 20.73-7.84 28.56 0l178.48 178.48L434.5 5.89c7.86-7.86 20.74-7.82 28.56 0l43.07 43.07c7.83 7.84 7.83 20.72 0 28.56l-192.41 192.4-.36.37-43.07 43.07c-7.83 7.82-20.7 7.86-28.56 0l-43.07-43.07-.36-.37L5.9 77.52c-7.87-7.86-7.87-20.7 0-28.56z"/></svg>
+            </button>
+            <div class="pannel">
+                <p>
+                    Topping trees is not a good idea as it provides no benefit to the tree. In fact, topping trees causes:
+                    <ol>
+                        <li><b>Starvation:</b> Topping removes large portions of the crown, reducing the tree's ability to manufacture energy resources to
+                            recover from the pruning cuts.
+                        </li>
+                        <li><b>Insects, diseases, and decay:</b> Large pruning woundes are vulnerable to insect invasion and the spores
+                            of wood-decaying organisms.
+                        </li>
+                        <li>
+                            <b>Weak branch attachments:</b> A new branch that sprouts after a large one is shortened is more weakly attached
+                            than a branch that develops normally.
+                        </li>
+                        <li>
+                            <b>Tree death:</b> Many trees do not have the ability or resources to recover from this extreme pruning, leading to decline and eventual 
+                            death.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                What is the cost to remove a tree? 
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512.02 319.26"><path d="M5.9 48.96 48.97 5.89c7.86-7.86 20.73-7.84 28.56 0l178.48 178.48L434.5 5.89c7.86-7.86 20.74-7.82 28.56 0l43.07 43.07c7.83 7.84 7.83 20.72 0 28.56l-192.41 192.4-.36.37-43.07 43.07c-7.83 7.82-20.7 7.86-28.56 0l-43.07-43.07-.36-.37L5.9 77.52c-7.87-7.86-7.87-20.7 0-28.56z"/></svg>
+            </button>
+            <div class="pannel">
+                <p>
+                    the cost to remove a tree varies widely depending on several factors, including: 
+                    Tree size and height, Type of tree, Location and accessibility, Root system complexity
+                </p>
+            </div>
         </div>
     </article>
 

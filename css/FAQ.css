@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+.faq-wrapper {
+    max-width: 75%;
+    margin: auto;
+}
+
+.faq-wrapper h2,
+.faq-wrapper p {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.accordion {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2em 2.5em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.pannel {
+    display: none;
+    padding: 0 2em 2.5em 2em;
+    font-family: 'Urbanist', sans-serif;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 80%);
+}
+
+.pannel p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.911);
+
+}
+
+.pannel li {
+    padding-bottom: 1em;
+}
+
+.faq {
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.faq.active {
+    border: none;
+}
