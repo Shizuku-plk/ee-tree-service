@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
 *:after,
 *:before {
@@ -17,7 +18,7 @@
 }
 
 .testim {
-		width: 100%;
+		width: 90%;
 }
 
 .testim .wrap {
@@ -25,38 +26,6 @@
     width: 100%;
     max-width: 1020px;
     margin: auto;
-}
-
-.testim .arrow {
-    display: block;
-    position: absolute;
-    color: #333;
-    cursor: pointer;
-    font-size: 2em;
-    -webkit-transition: all .3s ease-in-out;    
-    -ms-transition: all .3s ease-in-out;    
-    -moz-transition: all .3s ease-in-out;    
-    -o-transition: all .3s ease-in-out;    
-    transition: all .3s ease-in-out;
-    padding: 5px;
-    z-index: 22222222;
-}
-
-.testim .arrow:before {
-		cursor: pointer;
-}
-
-.testim .arrow:hover {
-    color: green;
-}
-    
-
-.testim .arrow.left {
-    left: 70px;
-}
-
-.testim .arrow.right {
-    right: 70px;
 }
 
 .testim .dots {
@@ -67,7 +36,7 @@
     left: 0;
     display: block;
     z-index: 3333;
-		height: 12px;
+	height: 1.1rem;
 }
 
 .testim .dots .dot {
@@ -89,8 +58,8 @@
 
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
-    background: green;
-    border-color: green;
+    background: hsl(120, 81%, 21%);
+    border-color: hsl(120, 81%, 21%);
 }
 
 .testim .dots .dot.active {
@@ -103,7 +72,7 @@
     
 .testim .cont {
     position: relative;
-		overflow: hidden;
+	overflow: hidden;
 }
 
 .testim .cont > div {
@@ -111,8 +80,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 0 70px 0;
+    padding: 0 0 30px 0;
     opacity: 0;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .testim .cont > div.inactive {
@@ -124,38 +94,23 @@
     position: relative;
     opacity: 1;
 }
-    
 
-.testim .cont div .img img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border-radius: 50%;
-}
-
-.testim .cont div h2 {
-    color: green;
+.testim .cont div h3 {
+    color: hsl(120, 81%, 21%);
     font-size: 1em;
     margin: 15px 0;
 }
 
 .testim .cont div p {
-    font-size: 1.15em;
-    color: #333;
     width: 70%;
     margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: 'urbanist', sans-serif;
+    color: hsl(0, 0%, 0%);
 }
 
-.testim .cont div.active .img img {
-    -webkit-animation: testim-show .5s ease-in-out forwards;            
-    -moz-animation: testim-show .5s ease-in-out forwards;            
-    -ms-animation: testim-show .5s ease-in-out forwards;            
-    -o-animation: testim-show .5s ease-in-out forwards;            
-    animation: testim-show .5s ease-in-out forwards;            
-}
-
-.testim .cont div.active h2 {
+.testim .cont div.active h3 {
     -webkit-animation: testim-content-in .4s ease-in-out forwards;    
     -moz-animation: testim-content-in .4s ease-in-out forwards;    
     -ms-animation: testim-content-in .4s ease-in-out forwards;    
@@ -171,15 +126,7 @@
     animation: testim-content-in .5s ease-in-out forwards;    
 }
 
-.testim .cont div.inactive .img img {
-    -webkit-animation: testim-hide .5s ease-in-out forwards;            
-    -moz-animation: testim-hide .5s ease-in-out forwards;            
-    -ms-animation: testim-hide .5s ease-in-out forwards;            
-    -o-animation: testim-hide .5s ease-in-out forwards;            
-    animation: testim-hide .5s ease-in-out forwards;            
-}
-
-.testim .cont div.inactive h2 {
+.testim .cont div.inactive h3 {
     -webkit-animation: testim-content-out .4s ease-in-out forwards;        
     -moz-animation: testim-content-out .4s ease-in-out forwards;        
     -ms-animation: testim-content-out .4s ease-in-out forwards;        
@@ -571,21 +518,4 @@
         opacity: 0;
         transform: scale(0);
     }
-}
-
-@media all and (max-width: 300px) {
-	body {
-		font-size: 14px;
-	}
-}
-
-@media all and (max-width: 500px) {
-	.testim .arrow {
-		font-size: 1.5em;
-	}
-	
-	.testim .cont div p {
-		line-height: 25px;
-	}
-
 }

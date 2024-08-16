@@ -5,6 +5,7 @@ nav {
     position: fixed;
     width: 100%;
     background: hsl(0, 0%, 95%);
+    z-index: 400;
 }
 
 @media screen and (max-width: 1440px) {
