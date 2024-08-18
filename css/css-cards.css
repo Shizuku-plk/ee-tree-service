@@ -1,6 +1,6 @@
-.services-container,
-.testimonial-container,
-.footer-container {
+
+.footer-container,
+.service-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,11 +12,7 @@
     padding: 1em;
 }
 
-.services-container > * + * {
-    margin: 2em 0 0 0;
-}
-
-.testimonial-container > * + * {
+.service-container > * + * {
     margin: 2em 0 0 0;
 }
 
@@ -26,8 +22,14 @@
 
 @media (min-width: 1200px) {
 
-    .services-container,
-    .testimonial-container {
+    .services-box,
+    .services-box2,
+    .services-box3 {
+        width: 350px;
+        height: 500px;
+    }
+    .service-container {
+        
       flex-direction: row;
       padding-top: 10%;
       padding-bottom: 5%;
@@ -36,14 +38,9 @@
     .footer-container {
         flex-direction: row;
     }
-  
-    .services-container > * + * {
-      margin: 0 0 0 7em;
-    }
-
-    .testimonial-container > * + * {
+    .service-container > * + * {
         margin: 0 0 0 7em;
-      }
+    }
 
     .footer-container > * + * {
         margin: 0 0 0 7em;
@@ -59,61 +56,6 @@
     -moz-box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.62);
     overflow: hidden;
     border-radius: 5px;
-}
-
-.content a, .content-snow a {
-    color: hsl(0, 0%, 90%);
-}
-
-.card p {
-    color: hsl(0, 0%, 80%);
-    line-height: 1.5;
-    font-family: 'Urbanist', sans-serif;
-    width: 25ch;
-    margin: 0 auto;
-}
-
-.card h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Urbanist', sans-serif;
-    color: hsl(0, 0%, 90%);
-}
-
-.card-btn {
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-family: 'Urbanist', sans-serif;
-}
-
-.card-btn a {
-    text-decoration: none;
-    color: hsl(120, 84%, 24%);
-}
-
-.testimonial-card {
-    width: 300px;
-    height: 360px;
-    padding: 0.5em;
-    
-    box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.62);
-    -webkit-box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.62);
-    -moz-box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.62);
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.testimonial-card h3 {
-    color: hsl(120, 84%, 24%);
-    font-size: 1.3rem;
-    padding: 0.5em 0 0 0;
-}
-
-.testimonial-card p {
-    line-height: 1.5;
-    font-family: 'Urbanist', sans-serif;
-    color: hsl(0, 0%, 80%);
 }
 
 .footer-content ul {

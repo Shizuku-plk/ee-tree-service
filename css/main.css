@@ -150,6 +150,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'urbanist', sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
 }
@@ -197,63 +198,118 @@ html {
     padding-bottom: 10%;
 }
 
-/*
-.scroll {
-    position: absolute;
-    width: 30px;
-    height: 90px;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-}
-*/
-
-/*
-.scroll p {
-    font-family: 'Urbanist', sans-serif;
-}
-*/
-
-/*
-.scrolldown {
-    position: absolute;
-    width: 30px;
-    top: 50%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-    width: 1px;
-    height: 70px;
-    background: hsl(0, 0%, 90%);
-    animation: animate 2s linear infinite;
-}
-*/
-/*
-@keyframes animate {
-    0% {
-        transform-origin: top;
-        transform: scaleY(0);
-    }
-
-    100% {
-        transform-origin: top;
-        transform: scaleY(1);
-    }
-}
-*/
-
-/*
-.hero-text,
-.hero-text2,
-.hero-text3,
-.hero-text4 {
-    padding: 0.5em;
-}
-*/
-
-/*
-.hero-text2 span,
-.hero-text3 span,
-.hero-text4 span {
+/*                            service cards section                                   */
+.service-container h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    padding-bottom: 0.5em;
     color: hsl(120, 81%, 21%);
 }
-*/
+.services-box {
+    padding: 1em;
+    background: linear-gradient(rgba(1, 3, 10, 0.8 ), rgba(1, 3, 10, 0.7)), url(../img/storm_damage_tree_removal.jpg);
+}
+.services-box2 {
+    padding: 1em;
+    background: linear-gradient(rgba(1, 3, 10, 0.8 ), rgba(1, 3, 10, 0.7)), url(../img/bucket_truck_tree_trimming_commercial.jpg);
+}
+.services-box3 {
+    padding: 1em;
+    background: linear-gradient(rgba(1, 3, 10, 0.8 ), rgba(1, 3, 10, 0.7)), url(../img/stump_removal.jpg);
+}
+
+.services-content p {
+    font-family: 'urbanist', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.services-content a {
+    color: hsl(120, 44%, 52%)
+}
+
+.services-box input[name="readmore"],
+.services-box2 input[name="readmore2"],
+.services-box3 input[name="readmore3"] {
+    display: none;
+}
+
+.services-content-wrapper {
+    padding: 1em;
+    border: 2px solid hsl(0, 0%, 90%);
+}
+
+.services-box .services-content,
+.services-box2 .services-content,
+.services-box3 .services-content {
+    position: relative;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    max-height: 150px;
+    color: hsl(0, 0%, 90%);
+}
+
+.services-box .services-content::before,
+.services-box2 .services-content::before,
+.services-box3 .services-content::before {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+    content: '';
+
+}
+
+.services-box .button,
+.services-box2 .button,
+.services-box3 .button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.services-box label,
+.services-box2 label,
+.services-box3 label {
+    display: inline-block;
+    position: relative;
+    width: 140px;
+    height: 50px;
+    font-family: 'urbanist', sans-serif;
+    text-align: center;
+    background-color: hsl(120, 81%, 21%);
+    color: hsl(0, 0%, 90%);
+    cursor: pointer;
+}
+
+.services-box label::before,
+.services-box2 label::before,
+.services-box3 label::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: attr(data-more);
+}
+
+.services-box input[name="readmore"]:checked ~ .services-content-wrapper label::before,
+.services-box2 input[name="readmore2"]:checked ~ .services-content-wrapper label::before,
+.services-box3 input[name="readmore3"]:checked ~ .services-content-wrapper label::before {
+    content: attr(data-less);
+}
+
+.services-box input[name="readmore"]:checked ~ .services-content-wrapper .services-content,
+.services-box2 input[name="readmore2"]:checked ~ .services-content-wrapper .services-content,
+.services-box3 input[name="readmore3"]:checked ~ .services-content-wrapper .services-content {
+    max-height: 300px;
+}
+
+.services-box input[name="readmore"]:checked ~ .services-content-wrapper .services-content::before,
+.services-box2 input[name="readmore2"]:checked ~ .services-content-wrapper .services-content::before,
+.services-box3 input[name="readmore3"]:checked ~ .services-content-wrapper .services-content::before {
+    height: 300px;
+}
