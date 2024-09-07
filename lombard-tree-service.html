@@ -46,8 +46,10 @@
     <link rel="stylesheet" href="css/css-cards.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/FAQ.css">
     <!--JS-->
     <script src="js/menu.js" defer></script>
+    <script src="js/FAQ.js" defer></script>
 </head>
 <body>
     <nav> 
@@ -165,13 +167,13 @@
         </article>
     </article>
 
-    <div class="page-3 parallax">
+    <article class="contact-wrapper">
         <h2 id="contact">Contact us</h2>
         <div class="form-container">
             <form action="https://formspree.io/f/xbjwkkwp" method="POST">
                 <input type="text" name="firstName" id="firstName" class="firstName" placeholder="First Name" required>
                 <input type="text" name="lastName" id="lastName" class="lastName" placeholder="Last Name" required>
-                <input type="email" name="email" id="email" class="email" placeholder="Email" required>
+                <input type="email" name="email" id="email" class="email" placeholder="email@address.com" required>
                 <label for="hear-about">How did you hear about us?</label>
                 <select name="referrer" id="hear-about">
                     <option value="google">Google</option>
@@ -183,7 +185,59 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-    </div>
+    </article>
+
+    <article class="faq-wrapper">
+        <h2>Frequently Asked Question</h2>
+        <div class="faq">
+            <button class="accordion">
+                What is the cost to remove a tree?
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512.02 319.26"><path d="M5.9 48.96 48.97 5.89c7.86-7.86 20.73-7.84 28.56 0l178.48 178.48L434.5 5.89c7.86-7.86 20.74-7.82 28.56 0l43.07 43.07c7.83 7.84 7.83 20.72 0 28.56l-192.41 192.4-.36.37-43.07 43.07c-7.83 7.82-20.7 7.86-28.56 0l-43.07-43.07-.36-.37L5.9 77.52c-7.87-7.86-7.87-20.7 0-28.56z"/></svg>
+            </button>
+            <div class="pannel">
+                <p>
+                    the cost to remove a tree varies widely depending on several factors, including: 
+                    Tree size and height, Type of tree, Location and accessibility, Root system complexity
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                Is topping trees a good idea?
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512.02 319.26"><path d="M5.9 48.96 48.97 5.89c7.86-7.86 20.73-7.84 28.56 0l178.48 178.48L434.5 5.89c7.86-7.86 20.74-7.82 28.56 0l43.07 43.07c7.83 7.84 7.83 20.72 0 28.56l-192.41 192.4-.36.37-43.07 43.07c-7.83 7.82-20.7 7.86-28.56 0l-43.07-43.07-.36-.37L5.9 77.52c-7.87-7.86-7.87-20.7 0-28.56z"/></svg>
+            </button>
+            <div class="pannel">
+                Topping trees is not a good idea as it provides no benefit to the tree. In fact, topping trees causes:
+                    <ol>
+                        <li><b>Starvation:</b> Topping removes large portions of the crown, reducing the tree's ability to manufacture energy resources to
+                            recover from the pruning cuts.
+                        </li>
+                        <li><b>Insects, diseases, and decay:</b> Large pruning woundes are vulnerable to insect invasion and the spores
+                            of wood-decaying organisms.
+                        </li>
+                        <li>
+                            <b>Weak branch attachments:</b> A new branch that sprouts after a large one is shortened is more weakly attached
+                            than a branch that develops normally.
+                        </li>
+                        <li>
+                            <b>Tree death:</b> Many trees do not have the ability or resources to recover from this extreme pruning, leading to decline and eventual 
+                            death.
+                        </li>
+                    </ol>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                What month is best to trim trees? 
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512.02 319.26"><path d="M5.9 48.96 48.97 5.89c7.86-7.86 20.73-7.84 28.56 0l178.48 178.48L434.5 5.89c7.86-7.86 20.74-7.82 28.56 0l43.07 43.07c7.83 7.84 7.83 20.72 0 28.56l-192.41 192.4-.36.37-43.07 43.07c-7.83 7.82-20.7 7.86-28.56 0l-43.07-43.07-.36-.37L5.9 77.52c-7.87-7.86-7.87-20.7 0-28.56z"/></svg>
+            </button>
+            <div class="pannel">
+                <p>
+                    The best time to trim trees is during the <b>dormant season</b> which is typically between late fall and early spring.
+                </p>
+            </div>
+        </div>
+    </article>
 
     <footer>
         <div class="footer-container">
@@ -279,7 +333,7 @@
     
         <hr>
     
-        <span class="copyright">2023 EE Tree Service Inc &copy;All Rights Reserved</span>
+        <span class="copyright">2024 EE Tree Service Inc &copy;All Rights Reserved</span>
       </footer>
 </body>
 </html>
